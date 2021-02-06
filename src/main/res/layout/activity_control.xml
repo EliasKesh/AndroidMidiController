@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.kesh.midictrl.ControlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:text="@string/device" />
+
+            <Spinner
+                android:id="@+id/spinnerDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:text="1"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="2"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="3"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="4"
+                android:layout_row="0"
+                android:layout_column="3" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="5"
+                android:layout_row="0"
+                android:layout_column="4" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="6"
+                android:layout_row="0"
+                android:layout_column="5" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="7"
+                android:layout_row="0"
+                android:layout_column="6" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="8"
+                android:layout_row="0"
+                android:layout_column="7" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_height="50dp"
+                android:layout_width="60dp"
+                android:text="9"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="10"
+                android:layout_row="1"
+                android:layout_column="1" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="11"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="12"
+                android:layout_row="1"
+                android:layout_column="3" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="13"
+                android:layout_row="1"
+                android:layout_column="4" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="14"
+                android:layout_row="1"
+                android:layout_column="5" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="15"
+                android:layout_row="1"
+                android:layout_column="6" />
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="16"
+                android:layout_row="1"
+                android:layout_column="7" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1"
+                android:max="127"
+                android:progressDrawable="@drawable/seekbar_drawable_progress"
+                android:thumb="@drawable/seekbar_drawable_thumb"
+                android:progress="63"
+                android:rotation="270" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2"
+                android:max="127"
+                android:progressDrawable="@drawable/seekbar_drawable_progress"
+                android:thumb="@drawable/seekbar_drawable_thumb"
+                android:progress="63"
+                android:rotation="270" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="127"
+                android:text="3"
+                android:progressDrawable="@drawable/seekbar_drawable_progress"
+                android:thumb="@drawable/seekbar_drawable_thumb"
+                android:progress="63"
+                android:rotation="270" />
+
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4"
+                android:max="127"
+                android:progressDrawable="@drawable/seekbar_drawable_progress"
+                android:thumb="@drawable/seekbar_drawable_thumb"
+                android:progress="63"
+                android:rotation="270" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

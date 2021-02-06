@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MIDICtrl</string>
+    <string name="device">Device:</string>
+</resources>
