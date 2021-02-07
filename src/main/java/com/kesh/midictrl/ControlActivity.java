@@ -18,6 +18,9 @@ import android.widget.Toast;
 import java.io.IOException;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.ActionMode;
 
 public class ControlActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -30,6 +33,9 @@ public class ControlActivity extends AppCompatActivity implements AdapterView.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_control);
+        // ejk Full Screen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         // Initialize MIDI
         m = (MidiManager) getApplicationContext().getSystemService(Context.MIDI_SERVICE);
